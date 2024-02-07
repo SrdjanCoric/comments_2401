@@ -1,3 +1,5 @@
+import moment from "moment";
+
 const Comment = ({ author, postedAt, body }) => {
   return (
     <div className="comment">
@@ -7,7 +9,7 @@ const Comment = ({ author, postedAt, body }) => {
       </div>
       <div className="header">
         <h3 className="author">{author}</h3>
-        <span>{postedAt}</span>
+        <span>{moment(postedAt).fromNow()}</span>
       </div>
       <p>{body}</p>
     </div>
