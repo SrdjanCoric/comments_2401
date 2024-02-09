@@ -18,8 +18,9 @@ const AddCommentsForm = ({ onSubmit }) => {
     <form onSubmit={handleSubmit} action="">
       <h2>Post a Comment</h2>
       <div className="input-group">
-        <label>Your Name</label>
+        <label htmlFor="name">Your Name</label>
         <input
+          id="name"
           type="text"
           onChange={(e) => setAuthor(e.target.value)}
           name="author"
@@ -28,8 +29,9 @@ const AddCommentsForm = ({ onSubmit }) => {
       </div>
 
       <div className="input-group">
-        <label>Your Comment</label>
+        <label htmlFor="body">Your Comment</label>
         <textarea
+          id="body"
           name="body"
           cols="30"
           onChange={(e) => setBody(e.target.value)}
