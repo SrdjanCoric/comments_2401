@@ -3,6 +3,7 @@ import axios from "axios";
 export const getComments = async () => {
   const { data } = await axios.get("/api/comments");
   return data;
+  // [comment1, comment2]
 };
 
 export const getMoreReplies = async (commentId) => {
