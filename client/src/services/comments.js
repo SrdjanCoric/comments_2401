@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const getComments = async () => {
-  const { data } = await axios.get("/api/commentsss");
+  const { data } = await axios.get("/api/comments");
   return data;
 };
 
