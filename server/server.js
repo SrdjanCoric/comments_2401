@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/api/comments", (req, res) => {
-  res.json(1);
+  res.json(data.getCommentsWithOneReply());
 });
 
 app.get("/api/comment_replies", (req, res) => {
