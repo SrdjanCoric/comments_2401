@@ -11,7 +11,7 @@ import App from "./App";
 jest.mock("../services/comments.js");
 
 afterEach(() => {
-  jest.clearAllMocks();
+  jest.resetAllMocks();
 });
 
 const mockCommentsData = [
