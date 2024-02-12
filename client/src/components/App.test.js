@@ -54,6 +54,7 @@ test("it contains h3 with the text of author name", async () => {
 });
 
 test("when I click more replies reply author appears on the screen", async () => {
+  getComments.mockResolvedValue(mockCommentsData);
   getMoreReplies.mockResolvedValue(moreReplies);
   render(<App />);
   const link = await screen.findByRole("link", { name: /Show More Replies/ });
